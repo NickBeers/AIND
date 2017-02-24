@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: By removing the values of the naked twins from the other boxes, we are shrinking the domain of the problem.  This is what constraint propagation is used for.  We took the sudoku problem, which had a rather large possible set of answers, and by removing some of the values we shrank that set bit by bit.  Because sudokus have such basic rules, you can use constraint proagation to remove values based on a set of rules.  We did this to remove all values from boxes that matched the values of the twins, because we know based on the rules that they would not be in those boxes. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Just like in all of the other units, if we include the diagonals, they have rules that limit the digits that can appear in them.  I just added the diagonals to the list of other diagonals, and the existing code worked perfectly with the diagonals, by now limiting the domain of possible answers for the sudoku.
 
 ### Install
 

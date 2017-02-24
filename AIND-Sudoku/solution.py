@@ -49,7 +49,6 @@ def naked_twins(values):
                 for digit in duplicate:
                     digits.append(digit)
             not_twins = [box for box in unit if values[box] not in duplicate_values]
-            print(digits)
             for nt in not_twins:
                 for digit in digits:
                     values = assign_value(values, nt, values[nt].replace(digit, '')) 
